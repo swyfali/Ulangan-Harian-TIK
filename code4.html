@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section class="code-page">
+        <div class="container">
+            <div class="code-card">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                        <h1 class="code-title">
+                            Kode Mini Project
+                        </h1>
+                    </div>
+                    <a href="index.html" class="btn custom-btn">
+                        Kembali
+                    </a>
+                </div>
+<pre><code>
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;title&gt;MONIN Syrups&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css&quot; /&gt;
+
+  &lt;style&gt;
+    body {
+      font-family: Georgia, serif;
+      background-color: #faf5ef;
+      color: #5c3d1e;
+    }
+
+    .navbar { background-color: #5c3d1e; }
+    .navbar-brand, .nav-link { color: white !important; }
+    .nav-link:hover { color: #f0d9b5 !important; }
+
+    .hero {
+      background-image: url('https://monin1912.com/cdn/shop/files/hero.jpg?v=1758008334&amp;width=1920');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 { font-size: 60px; text-shadow: 2px 2px 8px black; }
+    .hero p  { font-size: 18px; text-shadow: 1px 1px 4px black; }
+
+    .section-bg { background-color: #fff3e6; }
+
+    .card { border: 1px solid #ddd; }
+    .card-title { color: #5c3d1e; }
+
+    .about-banner {
+      background-color: #5c3d1e;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #3b2510;
+      color: #ccc;
+      padding: 25px;
+      font-size: 13px;
+    }
+    footer a { color: #ccc; text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: white; }
+
+    .progress { height: 18px; }
+    .btn-monin { background-color: #5c3d1e; color: white; border: none; }
+    .btn-monin:hover { background-color: #3b2510; color: white; }
+    .btn-outline-monin { border: 1px solid #5c3d1e; color: #5c3d1e; }
+    .btn-outline-monin:hover { background-color: #5c3d1e; color: white; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;!-- NAVBAR --&gt;
+  &lt;nav class=&quot;navbar navbar-expand-lg&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;a class=&quot;navbar-brand fw-bold&quot; href=&quot;#&quot;&gt;🍹 MONIN&lt;/a&gt;
+      &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#nav&quot;&gt;
+        &lt;span class=&quot;navbar-toggler-icon&quot; style=&quot;filter:invert(1);&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;nav&quot;&gt;
+        &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#products&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#news&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+
+  &lt;!-- HERO --&gt;
+  &lt;div class=&quot;hero&quot;&gt;
+    &lt;div&gt;
+      &lt;h1&gt;Since 1912&lt;/h1&gt;
+      &lt;p&gt;Making the world's finest flavour syrups for over 100 years&lt;/p&gt;
+      &lt;a href=&quot;#products&quot; class=&quot;btn btn-light me-2&quot;&gt;See Our Products&lt;/a&gt;
+      &lt;a href=&quot;#contact&quot; class=&quot;btn btn-outline-light&quot;&gt;Contact Us&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- ALERT BANNER --&gt;
+  &lt;div class=&quot;container mt-3&quot;&gt;
+    &lt;div class=&quot;alert alert-warning alert-dismissible fade show&quot; role=&quot;alert&quot;&gt;
+      🎉 &lt;strong&gt;New for 2026!&lt;/strong&gt; Check out our latest Pistachio and Earl Grey syrups &mdash; limited stocks available!
+      &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- PRODUCT CARDS --&gt;
+  &lt;div class=&quot;container my-5&quot; id=&quot;products&quot;&gt;
+    &lt;h2 class=&quot;text-center mb-1&quot;&gt;Our New Products&lt;/h2&gt;
+    &lt;p class=&quot;text-center text-muted mb-4&quot;&gt;Check out what's new for 2026!&lt;/p&gt;
+    &lt;div class=&quot;row g-4&quot;&gt;
+
+      &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+        &lt;div class=&quot;card h-100 shadow-sm&quot;&gt;
+          &lt;img src=&quot;https://monin1912.com/cdn/shop/files/Le-Sirop-de-MONIN-Pistachio-MONIN-1912-70250646864197.png?crop=center&amp;height=900&amp;v=1770642449&amp;width=400&quot; class=&quot;card-img-top p-3&quot; style=&quot;height:180px;object-fit:contain;&quot; alt=&quot;Pistachio&quot; /&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;badge mb-2&quot; style=&quot;background-color:#5c3d1e;&quot;&gt;New&lt;/span&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Pistachio Syrup&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot; style=&quot;font-size:14px;color:#777;&quot;&gt;Smooth, nutty and creamy. Great for coffee drinks!&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;card-footer bg-white border-0&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-monin btn-sm w-100&quot;&gt;Learn More&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+        &lt;div class=&quot;card h-100 shadow-sm&quot;&gt;
+          &lt;img src=&quot;https://monin1912.com/cdn/shop/files/Le-Sirop-de-MONIN-Earl-Grey-MONIN-1912-70111069929797.png?crop=center&amp;height=900&amp;v=1770642478&amp;width=400&quot; class=&quot;card-img-top p-3&quot; style=&quot;height:180px;object-fit:contain;&quot; alt=&quot;Earl Grey&quot; /&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;badge mb-2&quot; style=&quot;background-color:#5c3d1e;&quot;&gt;New&lt;/span&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Earl Grey Syrup&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot; style=&quot;font-size:14px;color:#777;&quot;&gt;Floral and citrusy. Perfect for a fancy tea latte.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;card-footer bg-white border-0&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-monin btn-sm w-100&quot;&gt;Learn More&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+        &lt;div class=&quot;card h-100 shadow-sm&quot;&gt;
+          &lt;img src=&quot;https://monin1912.com/cdn/shop/files/Le-Fruit-de-MONIN-Green-Melon-MONIN-1912-67341833044293.png?crop=center&amp;height=900&amp;v=1770649559&amp;width=400&quot; class=&quot;card-img-top p-3&quot; style=&quot;height:180px;object-fit:contain;&quot; alt=&quot;Green Melon&quot; /&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;badge bg-success mb-2&quot;&gt;Popular&lt;/span&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Green Melon&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot; style=&quot;font-size:14px;color:#777;&quot;&gt;Fresh and summery. Makes amazing smoothies!&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;card-footer bg-white border-0&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-monin btn-sm w-100&quot;&gt;Learn More&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+        &lt;div class=&quot;card h-100 shadow-sm&quot;&gt;
+          &lt;img src=&quot;https://monin1912.com/cdn/shop/files/LeFrappedeMONINCreamFrappePackshot_1_ba34868f-5f46-48b6-bb05-873c80bb1075.png?crop=center&amp;height=900&amp;v=1770799839&amp;width=400&quot; class=&quot;card-img-top p-3&quot; style=&quot;height:180px;object-fit:contain;&quot; alt=&quot;Cream Frappe&quot; /&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;badge bg-warning text-dark mb-2&quot;&gt;Staff Pick 😍&lt;/span&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Cream Frapp&eacute;&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot; style=&quot;font-size:14px;color:#777;&quot;&gt;So creamy and smooth. My personal favorite!&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;card-footer bg-white border-0&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-monin btn-sm w-100&quot;&gt;Learn More&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- FLAVOUR POPULARITY - PROGRESS BARS --&gt;
+  &lt;div class=&quot;section-bg py-5&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;h2 class=&quot;text-center mb-1&quot;&gt;Most Popular Flavours&lt;/h2&gt;
+      &lt;p class=&quot;text-center text-muted mb-4&quot;&gt;Based on customer reviews this year&lt;/p&gt;
+      &lt;div class=&quot;row justify-content-center&quot;&gt;
+        &lt;div class=&quot;col-md-7&quot;&gt;
+
+          &lt;p class=&quot;mb-1 fw-bold&quot;&gt;Vanilla&lt;/p&gt;
+          &lt;div class=&quot;progress mb-3&quot;&gt;
+            &lt;div class=&quot;progress-bar&quot; style=&quot;width:92%;background-color:#5c3d1e;&quot;&gt;92%&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;p class=&quot;mb-1 fw-bold&quot;&gt;Caramel&lt;/p&gt;
+          &lt;div class=&quot;progress mb-3&quot;&gt;
+            &lt;div class=&quot;progress-bar&quot; style=&quot;width:85%;background-color:#8b6347;&quot;&gt;85%&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;p class=&quot;mb-1 fw-bold&quot;&gt;Pistachio&lt;/p&gt;
+          &lt;div class=&quot;progress mb-3&quot;&gt;
+            &lt;div class=&quot;progress-bar bg-success&quot; style=&quot;width:74%;&quot;&gt;74%&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;p class=&quot;mb-1 fw-bold&quot;&gt;Green Melon&lt;/p&gt;
+          &lt;div class=&quot;progress mb-3&quot;&gt;
+            &lt;div class=&quot;progress-bar bg-info&quot; style=&quot;width:68%;&quot;&gt;68%&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;p class=&quot;mb-1 fw-bold&quot;&gt;Earl Grey&lt;/p&gt;
+          &lt;div class=&quot;progress mb-3&quot;&gt;
+            &lt;div class=&quot;progress-bar bg-warning text-dark&quot; style=&quot;width:61%;&quot;&gt;61%&lt;/div&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- ABOUT + ACCORDION --&gt;
+  &lt;div class=&quot;about-banner&quot; id=&quot;about&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;h2 style=&quot;color:white;&quot; class=&quot;mb-3&quot;&gt;About MONIN&lt;/h2&gt;
+      &lt;p class=&quot;mx-auto mb-4&quot; style=&quot;max-width:600px;&quot;&gt;MONIN has been a family business since 1912. We make syrups for coffee shops, bars, and restaurants all over the world.&lt;/p&gt;
+
+      &lt;div class=&quot;accordion mx-auto&quot; id=&quot;aboutAccordion&quot; style=&quot;max-width:650px;text-align:left;&quot;&gt;
+        &lt;div class=&quot;accordion-item&quot;&gt;
+          &lt;h2 class=&quot;accordion-header&quot;&gt;
+            &lt;button class=&quot;accordion-button collapsed&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#acc1&quot;&gt;
+              🌿 Our Sustainability Promise
+            &lt;/button&gt;
+          &lt;/h2&gt;
+          &lt;div id=&quot;acc1&quot; class=&quot;accordion-collapse collapse&quot; data-bs-parent=&quot;#aboutAccordion&quot;&gt;
+            &lt;div class=&quot;accordion-body&quot; style=&quot;font-size:14px;&quot;&gt;
+              We care a lot about the environment. We work with trusted farmers and try to use natural ingredients as much as possible. We also try to reduce waste in our factories.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;accordion-item&quot;&gt;
+          &lt;h2 class=&quot;accordion-header&quot;&gt;
+            &lt;button class=&quot;accordion-button collapsed&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#acc2&quot;&gt;
+              🏆 Our Awards
+            &lt;/button&gt;
+          &lt;/h2&gt;
+          &lt;div id=&quot;acc2&quot; class=&quot;accordion-collapse collapse&quot; data-bs-parent=&quot;#aboutAccordion&quot;&gt;
+            &lt;div class=&quot;accordion-body&quot; style=&quot;font-size:14px;&quot;&gt;
+              MONIN has won tons of awards over the years for quality and innovation. We are really proud of our team and what we have achieved since 1912!
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;accordion-item&quot;&gt;
+          &lt;h2 class=&quot;accordion-header&quot;&gt;
+            &lt;button class=&quot;accordion-button collapsed&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#acc3&quot;&gt;
+              🌍 Where We Ship
+            &lt;/button&gt;
+          &lt;/h2&gt;
+          &lt;div id=&quot;acc3&quot; class=&quot;accordion-collapse collapse&quot; data-bs-parent=&quot;#aboutAccordion&quot;&gt;
+            &lt;div class=&quot;accordion-body&quot; style=&quot;font-size:14px;&quot;&gt;
+              We ship to over 100 countries around the world. Find your nearest MONIN distributor using our store locator on the website.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- NEWS --&gt;
+  &lt;div class=&quot;container py-5&quot; id=&quot;news&quot;&gt;
+    &lt;h2 class=&quot;text-center mb-4&quot;&gt;Latest News&lt;/h2&gt;
+    &lt;div class=&quot;row g-4&quot;&gt;
+
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;card h-100 shadow-sm&quot;&gt;
+          &lt;img src=&quot;https://monin1912.com/cdn/shop/files/12-2025-MC-LinkedIn-theme.jpg?v=1765376745&amp;width=600&quot; class=&quot;card-img-top&quot; style=&quot;height:180px;object-fit:cover;&quot; alt=&quot;MONIN Cup&quot; /&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;badge bg-danger mb-2&quot;&gt;Events&lt;/span&gt;
+            &lt;h6 class=&quot;card-title&quot;&gt;MONIN Cup 2026 is coming to APAC!&lt;/h6&gt;
+            &lt;p class=&quot;card-text&quot; style=&quot;font-size:13px;color:#777;&quot;&gt;The biggest barista competition in the region is back. Register now before spots run out!&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;card-footer bg-white border-0&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-outline-monin btn-sm&quot;&gt;Read More&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;card h-100 shadow-sm&quot;&gt;
+          &lt;img src=&quot;https://monin1912.com/cdn/shop/articles/1726138934CSOONPBPAGEIMAGE_2528cbe6-510a-4da0-9e33-c455931fa563.jpg?v=1762326516&amp;width=600&quot; class=&quot;card-img-top&quot; style=&quot;height:180px;object-fit:cover;&quot; alt=&quot;Lemonade&quot; /&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;badge bg-success mb-2&quot;&gt;Tips&lt;/span&gt;
+            &lt;h6 class=&quot;card-title&quot;&gt;How to make the perfect lemonade with MONIN&lt;/h6&gt;
+            &lt;p class=&quot;card-text&quot; style=&quot;font-size:13px;color:#777;&quot;&gt;A simple recipe guide for beginners. You only need 3 ingredients!&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;card-footer bg-white border-0&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-outline-monin btn-sm&quot;&gt;Read More&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;div class=&quot;card h-100 shadow-sm&quot;&gt;
+          &lt;img src=&quot;https://monin1912.com/cdn/shop/articles/1713249797CSOONPBPAGEIMAGE_9ef5be7b-3bee-43b8-8e6e-1b666ed32262.jpg?v=1741770487&amp;width=600&quot; class=&quot;card-img-top&quot; style=&quot;height:180px;object-fit:cover;&quot; alt=&quot;Low ABV&quot; /&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;badge bg-info text-dark mb-2&quot;&gt;Trends&lt;/span&gt;
+            &lt;h6 class=&quot;card-title&quot;&gt;Low-alcohol drinks are trending &mdash; here's why&lt;/h6&gt;
+            &lt;p class=&quot;card-text&quot; style=&quot;font-size:13px;color:#777;&quot;&gt;More and more people are switching to low-ABV drinks and MONIN has the perfect syrups for it.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;card-footer bg-white border-0&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-outline-monin btn-sm&quot;&gt;Read More&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- CONTACT FORM --&gt;
+  &lt;div class=&quot;section-bg py-5&quot; id=&quot;contact&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row justify-content-center&quot;&gt;
+        &lt;div class=&quot;col-md-7&quot;&gt;
+          &lt;h2 class=&quot;text-center mb-1&quot;&gt;Contact Us&lt;/h2&gt;
+          &lt;p class=&quot;text-center text-muted mb-4&quot;&gt;Fill out this form and we'll get back to you soon!&lt;/p&gt;
+
+          &lt;div class=&quot;card shadow-sm&quot;&gt;
+            &lt;div class=&quot;card-body p-4&quot;&gt;
+              &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label class=&quot;form-label fw-bold&quot;&gt;Your Name&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;e.g. John Smith&quot; /&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label class=&quot;form-label fw-bold&quot;&gt;Email Address&lt;/label&gt;
+                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;john@email.com&quot; /&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label class=&quot;form-label fw-bold&quot;&gt;What are you asking about?&lt;/label&gt;
+                &lt;select class=&quot;form-select&quot;&gt;
+                  &lt;option value=&quot;&quot;&gt;-- Pick one --&lt;/option&gt;
+                  &lt;option&gt;Product info&lt;/option&gt;
+                  &lt;option&gt;Where to buy&lt;/option&gt;
+                  &lt;option&gt;Wholesale orders&lt;/option&gt;
+                  &lt;option&gt;Something else&lt;/option&gt;
+                &lt;/select&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label class=&quot;form-label fw-bold&quot;&gt;Your Message&lt;/label&gt;
+                &lt;textarea class=&quot;form-control&quot; rows=&quot;4&quot; placeholder=&quot;Type your message here...&quot;&gt;&lt;/textarea&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;mb-3 form-check&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;newsletter&quot; /&gt;
+                &lt;label class=&quot;form-check-label&quot; for=&quot;newsletter&quot;&gt;Subscribe me to the MONIN newsletter 📧&lt;/label&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;d-grid&quot;&gt;
+                &lt;button class=&quot;btn btn-monin btn-lg&quot; onclick=&quot;handleSubmit()&quot;&gt;Send Message&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div id=&quot;successMsg&quot; class=&quot;alert alert-success mt-3 d-none&quot; role=&quot;alert&quot;&gt;
+            ✅ Thanks! We got your message and will reply soon.
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- FOOTER --&gt;
+  &lt;footer&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row align-items-center&quot;&gt;
+        &lt;div class=&quot;col-md-4 mb-2&quot;&gt;
+          &lt;strong style=&quot;color:white;&quot;&gt;🍹 MONIN&lt;/strong&gt; &amp;nbsp;&mdash; Since 1912
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4 text-center mb-2&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;FAQ&lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;Privacy Policy&lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4 text-end mb-2&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;me-2&quot;&gt;&lt;i class=&quot;bi bi-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;a href=&quot;#&quot; class=&quot;me-2&quot;&gt;&lt;i class=&quot;bi bi-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;bi bi-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;hr style=&quot;border-color:#555;&quot; /&gt;
+      &lt;p class=&quot;text-center mb-0&quot;&gt;&copy; 2026 MONIN. All rights reserved.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    function handleSubmit() {
+      document.getElementById('successMsg').classList.remove('d-none');
+    }
+  &lt;/script&gt;
+
+  &lt;button class=&quot;&quot;&gt;&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
