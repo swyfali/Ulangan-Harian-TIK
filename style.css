@@ -506,3 +506,10 @@ pre {
 code {
     color: #f8fafc;
 }
+
+.code-subtitle{
+max-width:1000px;
+line-height:1.8;
+color:#666;
+}
+
